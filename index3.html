@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8"/>
+    <title>George Durendal</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+  </head>
+
+  <body>
+    <button onclick="button_action()" id="button_hideshow">Hide</button>
+
+    <div class="vertical-center">
+      <div id="content" class="container">
+        <div class="text-center text-light">
+          <div class="me">
+            <img src="https://avatars.githubusercontent.com/u/36553213?v=4" alt="me"/>
+            <h1>George Davila Durendal</h1>
+          </div>
+          <div class="container about">
+            <div class="row justify-content-md-center">
+              <div class="col col-lg-2">
+                <a href="https://github.com/GeorgeDavila">
+                  <img src="img/github.svg" alt="img/github.svg" width="46px" height="46px"/>
+                </a>
+              </div>
+              <div class="col col-lg-2">
+                <a href="https://www.linkedin.com/in/george-durendal/">
+                  <img src="img/linkedin.svg" alt="img/linkedin.svg" width="40px" height="46px"/>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="particles-js"></div>
+  </body>
+
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  
+  <script type="text/javascript">
+    particlesJS.load('particles-js', 'particlesjs.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
+
+    function button_action() {
+      var element = document.getElementById("content");
+      var button = document.getElementById("button_hideshow");
+      if(element.style.display === "none") {
+        element.style.display = "block";
+        button.innerHTML = "Hide";
+      }
+      else {
+        element.style.display = "none";
+        button.innerHTML = "Show";
+      }
+    };
+  </script>
+  
+
+</html>
