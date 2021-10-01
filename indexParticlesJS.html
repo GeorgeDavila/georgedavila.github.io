@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8"/>
+    <title>George Durendal</title>
+    <link rel="stylesheet" type="text/css" href="particlejsstyle.css"/>
+    <!--link rel="stylesheet" type="text/css" href="https://npmcdn.com/comet-css@1.2.0/dist/comet.min.css"/ -->
+  </head>
+
+  <body>  
+	  <div class="container">
+		Hi, I'm George. 
+	  </div>
+	  <canvas class="background"></canvas>
+	  <script src="particles.min.js"></script>
+  </body>
+  
+  <!--script type="text/javascript">
+    var particles = Particles.init({
+	    selector: '.background',
+      color: ['#DA0463', '#00dcc2', '#DBEDF3'],
+      connectParticles: true
+    });
+  </script> -->
+	
+    <script src="particles.min.js"></script>
+    <script>
+      window.onload = function() {
+        Particles.init({
+          selector: '.background',
+		speed: 1.5, 
+          color: ['#DA0463', '#00dcc2', '#DBEDF3'],
+          maxParticles: 130,
+          connectParticles: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              options: {
+                maxParticles: 80
+              }
+            }, {
+              breakpoint: 375,
+              options: {
+                maxParticles: 50
+              }
+            }
+          ]
+        });
+      };
+    </script>  
+
+</html>
