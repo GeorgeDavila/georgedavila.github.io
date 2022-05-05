@@ -23,16 +23,15 @@
 
 <py-script> 
 import numpy as np
+import matplotlib
 import matplotlib.pyplot as plt
+from sklearn.neighbors import LocalOutlierFactor
 	
 out = Element("outputDiv")
 input_num = Element("how-many")
 out2 = Element("outputDiv2")
 	  
-import numpy as np
-import matplotlib
-import matplotlib.pyplot as plt
-from sklearn.neighbors import LocalOutlierFactor
+
 
 np.random.seed(42)
 
