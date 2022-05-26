@@ -53,7 +53,7 @@
                 console.log("Toxicity detected");
             }
             
-            document.getElementById("txttotest").innerHTML = `Scanned phrase: ${x}  |  Toxicity array result: ${toxicityArrayBooleans}`;
+            document.getElementById("txttotest").innerHTML = `Scanned phrase: ${x}  |  Toxicity array result: [${toxicityArrayBooleans}] | if any of these are "True" then the model thinks that some form of toxicity is present.`;
             
               
           });
